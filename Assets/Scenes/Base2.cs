@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
-public class Base2 : Archer, Mage , Swordsman
+public class Base2 : Archer, Mage, Swordsman
 {
     private string Statshow;
 
@@ -16,7 +16,7 @@ public class Base2 : Archer, Mage , Swordsman
     {
         Statshow = $"Mage Stats: \r\n \r\nHealth: {MageHealth} \r\n Attack: {MageAttack} \r\n Defense: {MageDefense}";
     }
-    
+
     public void Swoordsman()
     {
         Statshow = $"Swordsman Stats: \r\n \r\n Health: {SwordsmanHealth} \r\n Attack: {SwordsmanAttack} \r\n Defense: {SwordsmanDefense}";
@@ -25,7 +25,7 @@ public class Base2 : Archer, Mage , Swordsman
 
     private void Start()
     {
-        
+
         CKstats();
     }
 
@@ -36,9 +36,9 @@ public class Base2 : Archer, Mage , Swordsman
 
         if (GUI.Button(new Rect(20, 100, 200, 75), "Mage"))
         {
-           magee();
+            magee();
         }
-        if (GUI.Button(new Rect(20,200, 200, 75), "Swordsman"))
+        if (GUI.Button(new Rect(20, 200, 200, 75), "Swordsman"))
         {
             Swoordsman();
         }
@@ -46,10 +46,10 @@ public class Base2 : Archer, Mage , Swordsman
         {
             Stats();
         }
-       
+
 
 
         GUI.Label(new Rect(750, 150, 200, 80), Statshow);
-        GUI.Label(new Rect(750, 350, 200, 75), Companionknightstats);
+
     }
 }

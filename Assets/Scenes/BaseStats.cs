@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class BaseStats : MonoBehaviour
 {
-    public int SwordsmanHealth;
-    public int SwordsmanAttack;
-    public int SwordsmanDefense;
+    protected int SwordsmanHealth = 1000;
+    protected int SwordsmanAttack = 25;
+    protected int SwordsmanDefense = 25;
 
-    public int MageHealth;
-    public int MageAttack;
-    public int MageDefense;
+    protected int MageHealth = 150;
+    protected int MageAttack = 2;
+    protected int MageDefense = 122;
 
     public int ArcherHealth;
     public int ArcherAttack;
     public int ArcherDefense;
 
-    public int DemonKingHealth;
+    protected int DemonKingHealth = 15000;
     public int DemonKingAttack;
     public int DemonKingDefense;
 
