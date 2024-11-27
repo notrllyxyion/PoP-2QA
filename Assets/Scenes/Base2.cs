@@ -22,19 +22,10 @@ public class Base2 : Archer, Mage , Swordsman
         Statshow = $"Swordsman Stats: \r\n \r\n Health: {SwordsmanHealth} \r\n Attack: {SwordsmanAttack} \r\n Defense: {SwordsmanDefense}";
     }
 
-    public override void steets()
-    {
-        base.steets();
-    }
-    public override void CKstats()
-    {
-        base.CKstats();
-    }
-
 
     private void Start()
     {
-        steets();
+        
         CKstats();
     }
 
@@ -55,10 +46,10 @@ public class Base2 : Archer, Mage , Swordsman
         {
             Stats();
         }
+       
 
 
         GUI.Label(new Rect(750, 150, 200, 80), Statshow);
-        GUI.Label(new Rect(750, 250, 200, 75), Demonkingstats);
         GUI.Label(new Rect(750, 350, 200, 75), Companionknightstats);
     }
 }

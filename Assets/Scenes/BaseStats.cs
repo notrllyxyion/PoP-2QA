@@ -28,7 +28,8 @@ public class BaseStats : MonoBehaviour
     protected string Demonkingstats;
     protected string Companionknightstats;
 
-    public virtual void steets()
+
+    public virtual void DKStats()
     {
       Demonkingstats = $"DemonKing Stats! \r\n Health: {DemonKingHealth} \r\n Attack: {DemonKingAttack} \r\n Defense: {DemonKingDefense}";
       
