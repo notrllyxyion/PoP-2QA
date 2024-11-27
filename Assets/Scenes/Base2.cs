@@ -38,6 +38,7 @@ public class Base2 : Archer, Mage , Swordsman
         CKstats();
     }
 
+
     private void OnGUI()
     {
         GUI.Box(new Rect(20, 20, 1350, 650), "STAAAAAAAATS");
@@ -53,11 +54,6 @@ public class Base2 : Archer, Mage , Swordsman
         if (GUI.Button(new Rect(20, 300, 200, 75), "Archer"))
         {
             Stats();
-        }
-
-        if (GUI.Button(new Rect(20, 400, 200, 75), "Attack"))
-        {
-            
         }
 
 
